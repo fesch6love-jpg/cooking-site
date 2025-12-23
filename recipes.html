@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вкусные рецепты | Все рецепты</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>Вкусные рецепты</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="recipes.html" class="active"><i class="fas fa-book"></i> Рецепты</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> О нас</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <div class="main-container">
+            <section class="recipe-hero">
+                <h1 class="section-title">Все рецепты</h1>
+                <p>Выберите рецепт, который вам по душе, и приготовьте что-то вкусное сегодня!</p>
+                
+                <div class="search-bar" style="margin-top: 2rem;">
+                    <input type="text" placeholder="Поиск рецептов...">
+                    <button><i class="fas fa-search"></i> Найти</button>
+                </div>
+            </section>
+
+            <!-- Фильтры -->
+            <div style="margin-bottom: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="main">Основные блюда</button>
+                <button class="filter-btn" data-filter="dessert">Десерты</button>
+                <button class="filter-btn" data-filter="healthy">Здоровое питание</button>
+                <button class="filter-btn" data-filter="baking">Выпечка</button>
+            </div>
+
+            <!-- Все рецепты -->
+            <div class="recipes-grid">
+                <!-- Рецепт 1 -->
+                <div class="recipe-card" data-category="main">
+                    <div class="recipe-img" id="recipe-pasta"></div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Паста Карбонара</h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 30 мин</span>
+                            <span><i class="fas fa-user"></i> 4 порции</span>
+                            <span><i class="fas fa-fire"></i> 420 ккал</span>
+                        </div>
+                        <p class="recipe-description">Классическая итальянская паста с беконом, сыром и соусом из яиц.</p>
+                        <a href="#" class="recipe-link">Смотреть рецепт</a>
+                    </div>
+                </div>
+                
+                <!-- Рецепт 2 -->
+                <div class="recipe-card" data-category="dessert">
+                    <div class="recipe-img" id="recipe-tiramisu"></div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Тирамису</h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 40 мин</span>
+                            <span><i class="fas fa-user"></i> 6 порций</span>
+                            <span><i class="fas fa-fire"></i> 320 ккал</span>
+                        </div>
+                        <p class="recipe-description">Итальянский десерт из печенья савоярди, пропитанного кофе.</p>
+                        <a href="#" class="recipe-link">Смотреть рецепт</a>
+                    </div>
+                </div>
+                
+                <!-- Рецепт 3 -->
+                <div class="recipe-card" data-category="main">
+                    <div class="recipe-img" id="recipe-chicken"></div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Куриные котлеты</h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 25 мин</span>
+                            <span><i class="fas fa-user"></i> 4 порции</span>
+                            <span><i class="fas fa-fire"></i> 280 ккал</span>
+                        </div>
+                        <p class="recipe-description">Нежные и сочные куриные котлеты с зеленью.</p>
+                        <a href="#" class="recipe-link">Смотреть рецепт</a>
+                    </div>
+                </div>
+                
+                <!-- Рецепт 4 -->
+                <div class="recipe-card" data-category="healthy">
+                    <div class="recipe-img" style="background-color: #eee;"></div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Салат Цезарь</h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 20 мин</span>
+                            <span><i class="fas fa-user"></i> 2 порции</span>
+                            <span><i class="fas fa-fire"></i> 250 ккал</span>
+                        </div>
+                        <p class="recipe-description">Классический салат с курицей, сухариками и соусом.</p>
+                        <a href="#" class="recipe-link">Смотреть рецепт</a>
+                    </div>
+                </div>
+                
+                <!-- Рецепт 5 -->
+                <div class="recipe-card" data-category="baking">
+                    <div class="recipe-img" style="background-color: #eee;"></div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Домашний хлеб</h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 3 часа</span>
+                            <span><i class="fas fa-user"></i> 1 буханка</span>
+                            <span><i class="fas fa-fire"></i> 180 ккал/ломтик</span>
+                        </div>
+                        <p class="recipe-description">Душистый домашний хлеб на закваске.</p>
+                        <a href="#" class="recipe-link">Смотреть рецепт</a>
+                    </div>
+                </div>
+                
+                <!-- Рецепт 6 -->
+                <div class="recipe-card" data-category="dessert">
+                    <div class="recipe-img" style="background-color: #eee;"></div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Шоколадный торт</h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 1.5 часа</span>
+                            <span><i class="fas fa-user"></i> 8 порций</span>
+                            <span><i class="fas fa-fire"></i> 450 ккал</span>
+                        </div>
+                        <p class="recipe-description">Нежный шоколадный торт с кремом.</p>
+                        <a href="#" class="recipe-link">Смотреть рецепт</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Пример детального рецепта -->
+            <section style="margin-top: 4rem;">
+                <h2 class="section-title">Рецепт дня: Паста Карбонара</h2>
+                
+                <div class="recipe-details">
+                    <div class="instructions">
+                        <h3>Способ приготовления</h3>
+                        <ol>
+                            <li>Поставьте большую кастрюлю с подсоленной водой на огонь и доведите до кипения.</li>
+                            <li>Пока вода закипает, нарежьте бекон небольшими кусочками.</li>
+                            <li>Обжарьте бекон на сковороде до хрустящей корочки.</li>
+                            <li>В миске взбейте яйца с тертым сыром пармезан и черным перцем.</li>
+                            <li>Когда вода закипит, добавьте пасту и варите согласно инструкции на упаковке.</li>
+                            <li>Отлейте половник воды от пасты, затем слейте остальную воду.</li>
+                            <li>Смешайте горячую пасту с беконом, затем добавьте яичную смесь, быстро перемешивая.</li>
+                            <li>Подавайте немедленно, посыпав дополнительным пармезаном и перцем.</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="ingredients">
+                        <h3>Ингредиенты</h3>
+                        <ul>
+                            <li>Спагетти <span>400 г</span></li>
+                            <li>Бекон <span>200 г</span></li>
+                            <li>Яйца <span>4 шт</span></li>
+                            <li>Пармезан <span>100 г</span></li>
+                            <li>Черный перец <span>по вкусу</span></li>
+                            <li>Соль <span>по вкусу</span></li>
+                            <li>Оливковое масло <span>1 ст.л.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>О нашем сайте</h3>
+                <p>«Вкусные рецепты» — это коллекция проверенных рецептов для каждого дня.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Полезные ссылки</h3>
+                <p><a href="index.html">Главная</a></p>
+                <p><a href="recipes.html">Все рецепты</a></p>
+                <p><a href="about.html">О нас</a></p>
+                <p><a href="contact.html">Контакты</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-envelope"></i> info@vkusnyerecepty.ru</p>
+                <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+                <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Кулинарная, д. 10</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Вкусные рецепты. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

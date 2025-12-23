@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вкусные рецепты | Главная</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>Вкусные рецепты</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="recipes.html"><i class="fas fa-book"></i> Рецепты</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> О нас</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <div class="main-container">
+            <!-- Герой-секция -->
+            <section class="hero" id="hero-bg">
+                <h1>Откройте для себя мир вкусной еды</h1>
+                <p>Простые и доступные рецепты для каждого дня. Готовьте с удовольствием и удивляйте близких кулинарными шедеврами!</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="Поиск рецептов...">
+                    <button><i class="fas fa-search"></i> Найти</button>
+                </div>
+            </section>
+
+            <!-- Категории рецептов -->
+            <section>
+                <h2 class="section-title">Категории рецептов</h2>
+                <div class="categories">
+                    <div class="category-card">
+                        <div class="category-img" id="cat-main-dish"></div>
+                        <div class="category-content">
+                            <h3>Основные блюда</h3>
+                            <p>Мясные, рыбные и овощные блюда для сытного обеда или ужина</p>
+                        </div>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-img" id="cat-desserts"></div>
+                        <div class="category-content">
+                            <h3>Десерты</h3>
+                            <p>Торты, пироги, печенье и другие сладкие удовольствия</p>
+                        </div>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-img" id="cat-healthy"></div>
+                        <div class="category-content">
+                            <h3>Здоровое питание</h3>
+                            <p>Полезные и низкокалорийные блюда для поддержания формы</p>
+                        </div>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-img" id="cat-baking"></div>
+                        <div class="category-content">
+                            <h3>Выпечка</h3>
+                            <p>Хлеб, булочки, пицца и другие мучные изделия</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Популярные рецепты -->
+            <section>
+                <h2 class="section-title">Популярные рецепты</h2>
+                <div class="recipes-grid">
+                    <div class="recipe-card">
+                        <div class="recipe-img" id="recipe-pasta"></div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Паста Карбонара</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 30 мин</span>
+                                <span><i class="fas fa-user"></i> 4 порции</span>
+                                <span><i class="fas fa-fire"></i> 420 ккал</span>
+                            </div>
+                            <p class="recipe-description">Классическая итальянская паста с беконом, сыром и соусом из яиц. Простой рецепт для вкусного ужина.</p>
+                            <a href="recipes.html" class="recipe-link">Смотреть рецепт</a>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card">
+                        <div class="recipe-img" id="recipe-tiramisu"></div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Тирамису</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 40 мин</span>
+                                <span><i class="fas fa-user"></i> 6 порций</span>
+                                <span><i class="fas fa-fire"></i> 320 ккал</span>
+                            </div>
+                            <p class="recipe-description">Итальянский десерт из печенья савоярди, пропитанного кофе, с кремом на основе маскарпоне.</p>
+                            <a href="recipes.html" class="recipe-link">Смотреть рецепт</a>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card">
+                        <div class="recipe-img" id="recipe-chicken"></div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Куриные котлеты</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 25 мин</span>
+                                <span><i class="fas fa-user"></i> 4 порции</span>
+                                <span><i class="fas fa-fire"></i> 280 ккал</span>
+                            </div>
+                            <p class="recipe-description">Нежные и сочные куриные котлеты с зеленью. Идеальное блюдо для семейного обеда.</p>
+                            <a href="recipes.html" class="recipe-link">Смотреть рецепт</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>О нашем сайте</h3>
+                <p>«Вкусные рецепты» — это коллекция проверенных рецептов для каждого дня. Мы собираем простые и доступные рецепты, которые сможет приготовить даже новичок.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Полезные ссылки</h3>
+                <p><a href="recipes.html">Все рецепты</a></p>
+                <p><a href="recipes.html">Рецепты на каждый день</a></p>
+                <p><a href="recipes.html">Праздничные блюда</a></p>
+                <p><a href="recipes.html">Диетические рецепты</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-envelope"></i> info@vkusnyerecepty.ru</p>
+                <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+                <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Кулинарная, д. 10</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Вкусные рецепты. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
